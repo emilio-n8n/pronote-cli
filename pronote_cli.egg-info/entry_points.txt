@@ -1,0 +1,2 @@
+[console_scripts]
+pronote = pronote_cli.__main__:main

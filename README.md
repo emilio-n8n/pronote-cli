@@ -27,12 +27,21 @@ vous êtes probablement sur le mauvais endpoint.
 ## Installation
 
 ```bash
-git clone https://github.com/<vous>/pronote-cli.git
+git clone https://github.com/emilio-n8n/pronote-cli.git
 cd pronote-cli
+sh install.sh
+```
+
+Le script crée un environnement Python isolé dans `~/.pronote-cli/venv`, installe
+la commande `pronote` dans `~/.local/bin`, puis demande l'URL, l'identifiant et
+le mot de passe (saisie masquée).
+
+Installation manuelle, si tu préfères :
+
+```bash
 python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python -m pronote_cli.setup          # enregistre identifiant + mot de passe
-python -m pronote_cli today
+pip install .
+python -m pronote_cli.setup
 ```
 
 Les identifiants sont stockés dans `~/.config/pronote-cli/credentials.json`

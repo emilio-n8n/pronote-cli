@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+pronote_cli/__init__.py
+pronote_cli/__main__.py
+pronote_cli/auth.py
+pronote_cli/commands.py
+pronote_cli/formatting.py
+pronote_cli/setup.py
+pronote_cli.egg-info/PKG-INFO
+pronote_cli.egg-info/SOURCES.txt
+pronote_cli.egg-info/dependency_links.txt
+pronote_cli.egg-info/entry_points.txt
+pronote_cli.egg-info/requires.txt
+pronote_cli.egg-info/top_level.txt
